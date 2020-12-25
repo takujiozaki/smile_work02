@@ -1,0 +1,16 @@
+body{
+    background-color: blue;
+}
+.myslider{
+    width:1000px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .myslider{
+        width:100%;
+    }
+    .myslider div img{
+        max-width: 100%;
+    }
+}

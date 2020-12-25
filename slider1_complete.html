@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Slick</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <style>
+        .container{
+            width: 100%;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div><img src="images/bicycle01.jpg" alt=""></div>
+            <div><img src="images/bicycle02.jpg" alt=""></div>
+            <div><img src="images/bicycle03.jpg" alt=""></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+      $('.slider').slick({
+        autoplay:true,
+        dots:true,
+        
+      });
+    </script>
+</body>
+</html>
