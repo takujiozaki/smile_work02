@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIGHTBOX</title>
+    <link rel="stylesheet" href="dist/css/lightbox.css">
     <link rel="stylesheet" href="css/style4.css">
 </head>
 <body>
     <div class="container">
-        <div><img src="images/motercycle01_s.jpg" alt=""></div>
-        <div><img src="images/motercycle02_s.jpg" alt=""></div>
-        <div><img src="images/motercycle03_s.jpg" alt=""></div>
+        <div><a href="images/motercycle01.jpg" data-lightbox="motercycles"><img src="images/motercycle01_s.jpg" alt=""></a></div>
+        <div><a href="images/motercycle02.jpg" data-lightbox="motercycles"><img src="images/motercycle02_s.jpg" alt=""></a></div>
+        <div><a href="images/motercycle03.jpg" data-lightbox="motercycles"><img src="images/motercycle03_s.jpg" alt=""></a></div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
 </body>
 </html>
