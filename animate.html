@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer.js</title>
+    <link rel="stylesheet" href="dist/css/drawer.min.css">
+    <style>
+      #target{
+        opacity: 0;
+      }
+      #image{
+        display: none;
+      }
+    </style>
+</head>
+<body>
+<div id="main">
+  <button id="sw">click</button>
+  <div id="target">Animate</div>
+  <button id="sw2">click</button>
+  <div id="image">
+    <img src="images/motercycle01.jpg" alt="">
+  </div>
+  <button id="sw3">click</button>
+  <div id="image2">
+    <img src="images/motercycle01_s.jpg" alt="">
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    
+  });
+  $('#sw').click(function(){
+    $('#target').animate({fontSize:80,opacity:1},2000,'swing',function(){
+      $(this).css('color','blue');
+    });
+  })
+  $('#sw2').click(function(){
+    //fadeIn fadeOut
+    $('#image').fadeToggle('slow');
+  })
+  $('#sw3').click(function(){
+    $('#image2').animate({marginLeft:'300px'})
+  })
+</script>
+</body>
+</html>
