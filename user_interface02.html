@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer.js</title>
+    <link rel="stylesheet" href="dist/css/drawer.min.css">
+    <style>
+      body{
+        margin: 0;
+      }
+      #main{
+        margin: 20px;;
+      }
+      #footer{
+        width: 100%;
+	      position: fixed;
+	      bottom: 0;
+      }
+      #footer .footernav{
+        display: flex;
+        justify-content: space-around;
+        background-color:#fff;
+      }
+      #footer .footernav div{
+        width: 50%;
+        border:solid 1px #222;
+        padding:10px;
+        text-align: center;
+      }
+      #footer .footernav div a{
+        color: #fff;
+      }
+      #footer .footernav .cta{
+        background-color: #f00;
+      }
+      #footer .footernav .btt{
+        background-color: #00f;
+      }
+    </style>
+</head>
+<body>
+<div id="main">
+  <p>
+    新型コロナウイルスについて、１５日、これまでに全国で７０００人を超える感染が発表されています。<br>
+
+　緊急事態宣言が出されている１１都府県では、東京都で２００１人の感染を発表。<br>６日ぶりに２０００人台となりました。<br>
+
+　また、千葉県では５０４人の感染を発表し、過去最多を更新。<br>神奈川県で８７２人、大阪府で５６８人などとなっています。<br>
+
+　そのほかの地域では、茨城県で過去最多となる１５９人が感染。<br>県独自の緊急事態宣言を出すことを発表しました。<br>
+
+　また、福井県で２５人、香川県で３７人の感染を発表していて、いずれも過去最多を更新しました。<br>
+
+　全国の重症者数は、前の日から１４人増えて９３４人となり、１２日連続で過去最多を更新しました。<br>（15日18:39）
+  </p>
+  <p>
+    新型コロナウイルスについて、１５日、これまでに全国で７０００人を超える感染が発表されています。<br>
+
+　緊急事態宣言が出されている１１都府県では、東京都で２００１人の感染を発表。<br>６日ぶりに２０００人台となりました。<br>
+
+　また、千葉県では５０４人の感染を発表し、過去最多を更新。<br>神奈川県で８７２人、大阪府で５６８人などとなっています。<br>
+
+　そのほかの地域では、茨城県で過去最多となる１５９人が感染。<br>県独自の緊急事態宣言を出すことを発表しました。<br>
+
+　また、福井県で２５人、香川県で３７人の感染を発表していて、いずれも過去最多を更新しました。<br>
+
+　全国の重症者数は、前の日から１４人増えて９３４人となり、１２日連続で過去最多を更新しました。<br>（15日18:39）
+  </p>
+  <p>
+    新型コロナウイルスについて、１５日、これまでに全国で７０００人を超える感染が発表されています。<br>
+
+　緊急事態宣言が出されている１１都府県では、東京都で２００１人の感染を発表。<br>６日ぶりに２０００人台となりました。<br>
+
+　また、千葉県では５０４人の感染を発表し、過去最多を更新。<br>神奈川県で８７２人、大阪府で５６８人などとなっています。<br>
+
+　そのほかの地域では、茨城県で過去最多となる１５９人が感染。<br>県独自の緊急事態宣言を出すことを発表しました。<br>
+
+　また、福井県で２５人、香川県で３７人の感染を発表していて、いずれも過去最多を更新しました。<br>
+
+　全国の重症者数は、前の日から１４人増えて９３４人となり、１２日連続で過去最多を更新しました。<br>（15日18:39）
+  </p>
+</div>
+<div id="footer">
+  <div class="footernav">
+    <div class="cta"><a href="mailto:">メールを送信</a></div>
+    <div class="btt"><a href="">topに戻る</a></div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#footer .footernav .btt a").click(function(){
+      $('html').animate({scrollTop: 0});
+    })
+  });
+</script>
+</body>
+</html>
