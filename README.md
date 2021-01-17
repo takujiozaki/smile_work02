@@ -117,47 +117,24 @@ https://www.youtube.com/embed/<video_id>?autoplay=1&mute=1&playsinline=1&loop=1&
 
 ## ハンバーガーメニュー
 ### 使用するプラグイン
-drawer.js
-https://git.blivesta.com/drawer/
+drawer.js  
+https://git.blivesta.com/drawer/  
 
-iScroll.js
-https://github.com/cubiq/iscroll
+iScroll.js  
+https://github.com/cubiq/iscroll  
+
+dropdown.js  
+http://git.blivesta.com/drawer/dropdown/
 
 ### 使い方
-```
-<body class="drawer drawer--left">
-    <header role="banner">
-      <button type="button" class="drawer-toggle drawer-hamburger">
-        <span class="sr-only">toggle navigation</span>
-        <span class="drawer-hamburger-icon"></span>
-      </button>
-      <nav class="drawer-nav" role="navigation">
-        <ul class="drawer-menu">
-          <li><a class="drawer-brand" href="#">製品</a></li>
-          <li><a class="drawer-menu-item" href="#">サービス</a></li>
-          <li><a class="drawer-menu-item" href="#">会社案内</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main role="main">
-      <!-- Page content -->
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="dist/js/iscroll.js"></script>
-    <script src="dist/js/drawer.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.drawer').drawer();
-        });
-    </script>
-  </body>
-  ```
-  ## sticky
-  https://github.com/garand/sticky
+https://github.com/takujiozaki/smile_work02/blob/main/user_interface01.html
 
-  ## fullPage.js
-  https://github.com/alvarotrigo/fullPage.js
-  
-  ## jQuery animateメソッド
-  ### 基本
-  $("#target").animete()
+## sticky
+https://github.com/garand/sticky
+
+## fullPage.js
+https://github.com/alvarotrigo/fullPage.js
+
+## jQuery animateメソッド
+### 基本
+$("#target").animete();
