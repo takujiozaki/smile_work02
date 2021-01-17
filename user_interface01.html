@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer.js</title>
+    <link rel="stylesheet" href="dist/css/drawer.min.css">
+</head>
+<body class="drawer drawer--left">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#">TOP</a></li>
+          <li class="drawer-dropdown">
+            <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">製品<span class="drawer-caret"></span>
+            </a>
+            <ul class="drawer-dropdown-menu">
+              <li><a class="drawer-dropdown-menu-item" href="#">ノートPC</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="#">デスクトップPC</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="#">タブレット</a></li>
+            </ul>
+          </li>
+          <li><a class="drawer-menu-item" href="#">サービス</a></li>
+          <li><a class="drawer-menu-item" href="#">会社案内</a></li>
+          <li><a class="drawer-menu-item" href="#">Left</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <!-- Page content -->
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="dist/js/iscroll.js"></script>
+    <script src="dist/js/drawer.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.drawer').drawer();
+        });
+    </script>
+  </body>
+</html>
